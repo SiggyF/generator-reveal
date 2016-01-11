@@ -3,6 +3,8 @@
   "version": "<%= config.get('packageVersion') %>",
   "dependencies": {
     "reveal.js": "~3.1.0",
-    "highlightjs": "~8.5.0"
+    "highlightjs": "~8.5.0",
+    "fontawesome": "~4.5.0"
+
   }
 }

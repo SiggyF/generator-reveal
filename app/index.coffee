@@ -99,6 +99,8 @@ module.exports = class RevealGenerator extends generators.Base
             @fs.copy @templatePath('list.json'), @destinationPath('slides/list.json')
             @fs.copy @templatePath('theme.scss'), @destinationPath('css/source/theme.scss') if @config.get 'useSass'
 
+            @fs.copy @templatePath('__main.css'), @destinationPath('css/main.css')
+
             @fs.copyTpl @templatePath('__index.html'), @destinationPath('templates/_index.html'), {'_': _, capitalize: capitalize, config: @config}
             @fs.copyTpl @templatePath('__section.html'), @destinationPath('templates/_section.html'), {'_': _, config: @config}
 

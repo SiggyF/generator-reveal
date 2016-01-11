@@ -94,7 +94,7 @@ describe 'Generator Reveal', ->
                 deployToGithubPages: false
             )
             .on 'end', ->
-                assert.fileContent '.yo-rc.json', /"generator-reveal"/
+                assert.fileContent '.yo-rc.json', /"generator-presentation"/
                 assert.fileContent '.yo-rc.json', /"useSass": false/
                 assert.fileContent '.yo-rc.json', /"revealTheme": "simple"/
                 assert.fileContent '.yo-rc.json', /"presentationTitle": "ICanHazConfig"/

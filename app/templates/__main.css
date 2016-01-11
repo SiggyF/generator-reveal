@@ -1,0 +1,11 @@
+/* not too big */
+.reveal section img {
+    max-width: 70%;
+    max-height: 70%;
+
+}
+/* font awesome */
+.reveal .fa {
+  font-family: 'FontAwesome';
+  font-style: normal;
+}
